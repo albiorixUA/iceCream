@@ -16,13 +16,13 @@
   font-family: 'Titan One', sans-serif;
   text-align: center;
   text-transform: uppercase;
-  // @include font($fw: 400, $fs: 58px, $lh: 66px, $ls: 0.06em);
+  @include font($fw: 400, $fs: 58px, $lh: 66px, $ls: 0.06em);
 
   @media screen and (min-width: 768px) {
-    // @include font($fw: 400, $fs: 48px, $lh: 55px);
+    @include font($fw: 400, $fs: 48px, $lh: 55px);
   }
 
   @media screen and (min-width: 1280px) {
-    // @include font($fw: 400, $fs: 58px, $lh: 66px, $ls: 0.06em);
+    @include font($fw: 400, $fs: 58px, $lh: 66px, $ls: 0.06em);
   }
 }
