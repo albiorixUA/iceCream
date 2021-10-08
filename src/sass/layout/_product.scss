@@ -1,9 +1,6 @@
 .products__text {
+  @include font(400, 18px, 21px);
   font-family: Titan One;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
   text-transform: uppercase;
   color: #ffa5ba;
   text-align: center;
@@ -11,12 +8,9 @@
 }
 
 .products__titel {
+  @include font(400, 34px, 39px, 0.04em);
   font-family: Titan One;
   font-style: normal;
-  font-weight: normal;
-  font-size: 34px;
-  line-height: 39px;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
   text-align: center;
@@ -101,16 +95,12 @@
 }
 
 .products__name {
-  text-align: center;
+  @include font(400, 20px, 23px, 0.04em);
   font-family: Titan One;
   font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ffffff;
+  text-align: center;
 }
 
 .products__discription::before {
@@ -125,13 +115,10 @@
 }
 
 .products__discription {
+  @include font(700, 14px, 22px, 0.04em);
   font-family: DM Sans;
   font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 152%;
   text-align: center;
-  letter-spacing: 0.04em;
   color: #ffffff;
   margin-top: 30px;
 }
