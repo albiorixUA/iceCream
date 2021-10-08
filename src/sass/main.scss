@@ -4,12 +4,12 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
+@import './utils/hidden';
+@import './utils/mixin';
+@import './utils/variables';
 @import './base/container';
 @import './base/reset';
 @import './base/section';
-@import './utils/hidden';
-// @import './utils/mixin';
-@import './utils/variables';
 @import './layout/heder';
 @import './layout/hero';
 @import './layout/product';
