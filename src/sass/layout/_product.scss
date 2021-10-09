@@ -1,3 +1,23 @@
+.container {
+  width: 100%;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+}
+
 .products__text {
   @include font(400, 18px, 21px);
   font-family: Titan One;
@@ -17,17 +37,39 @@
   margin-top: 15px;
 }
 
+@media screen and (min-width: 480px) {
+  .products__list {
+    display: flex;
+    margin-top: 150px;
+  }
+}
+
 .products__item {
   position: relative;
   height: 485px;
-  width: 280px;
+  min-width: 280px;
   margin: 0 auto;
   border-radius: 24px;
   padding-top: 161px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  @media screen and (min-width: 480px) {
+    width: 220px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .products__item:not(:first-child) {
+    margin-left: 20px;
+  }
 }
 
 .products__item:first-child {
   margin-top: 144px;
+  @media screen and (min-width: 480px) {
+    margin-top: 0px;
+  }
 }
 
 .products__item:not(:last-child) {
@@ -45,13 +87,17 @@
   display: block;
   width: 249px;
   height: 252px;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
   position: absolute;
   top: 0px;
-  left: 140px;
+  left: 50%;
   transform: translate(-50%, -45%);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/mob/home-pic1-2x.png);
+  }
 }
 
 .products__item--icecoffe {
@@ -65,13 +111,17 @@
   display: block;
   width: 249px;
   height: 252px;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
   position: absolute;
   top: 0px;
-  left: 140px;
+  left: 50%;
   transform: translate(-50%, -45%);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/mob/home-pic2-2x.png);
+  }
 }
 
 .products__item--blackcoffe {
@@ -85,13 +135,17 @@
   display: block;
   width: 249px;
   height: 252px;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
   position: absolute;
   top: 0px;
-  left: 140px;
+  left: 50%;
   transform: translate(-50%, -45%);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/mob/home-pic3-2x.png);
+  }
 }
 
 .products__name {
@@ -121,4 +175,28 @@
   text-align: center;
   color: #ffffff;
   margin-top: 30px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.products__button {
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/arrow-right.png);
+  border: none;
+  background-color: transparent;
+  margin: 0 auto;
+  display: block;
+  margin-top: 30px;
+  border-radius: 50%;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.products__button:hover {
+  cursor: pointer;
+  box-shadow: -1px 9px 37px 4px rgba(18, 118, 195, 0.6);
+}
+
+.products__button:active {
+  box-shadow: 0px 5px 10px 2px rgba(18, 118, 195, 0.2) inset;
 }
