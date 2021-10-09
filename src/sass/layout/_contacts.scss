@@ -1,0 +1,134 @@
+
+.contacts {
+    & ul {
+        list-style: none;
+    }
+    & span {
+        @include font (500, 12px, 22px);
+        font-style: normal;
+        display: inline-block;
+    }
+}
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.contact-card {
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    max-width: 220px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    padding: 43px 20px;
+}
+.contact-card__city, 
+.contact-card__schedule-list {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #E1E1E1;
+}
+.contact-card__city-name,
+.contact-card__schedule-day {
+    @include font (500, 12px, 22px);
+}
+
+.contact-card__link,
+.contact-card__description {
+    color: #907E82;
+    @include font (500, 12px, 18px, 0);
+    text-decoration: none;
+}
+
+// Верх
+
+.contact-card__mark {  
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #F0D1A5;
+    border-radius: 4px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.contact-card__city-name {
+    color: #000;
+    margin-bottom: 10px;
+}
+
+// расписание 
+.contact-card__schedule-item {
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }        
+}
+.contact-card__schedule-time {
+    color: #FFA5BA;
+    
+}
+
+// Тел и мыло
+
+.contact-card__communication-list {
+    margin-top: 25px;
+}
+
+
+
+.contact-card__mark--olive-and-padding28 {
+    background: #C2E297;
+    padding-left: 28px;
+    padding-right: 28px;
+    
+}
+.contacts__btn-wrapper  {
+    & li:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    margin-top: 54px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contacts__btn {
+    color: $main-color;
+    border: none;
+    border-radius: 22px;
+    background-color: $button-color;
+    cursor: pointer;
+    width: 161px;
+    height: 44px;
+    font-family: DM Sans, sans-serif;
+    @include font(bold, 16px, 21px, 0);
+    // display: flex;
+    // align-items: center;
+    // text-align: center;
+    
+    &:hover,
+    &:focus {
+      background-color: $button-hover-first-color;
+    }
+}
+.contacts__btn-icon {  
+    background-color: #fff;
+    margin-left: 11px;
+}
+.contacts__btn-icon--inverse-color {  
+    background-color: $button-color;
+    
+    // fill: $button-color;
+   
+}
+
+.contacts__btn--inverse-color {
+    color: $button-color;
+    background-color: rgb(224, 151, 151);
+}
+
+
+
