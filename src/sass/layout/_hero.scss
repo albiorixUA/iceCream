@@ -2,6 +2,7 @@
   background-color: $first-background-color;
 }
 .hero__container {
+  outline: 1px solid black;
   position: relative;
   min-width: 320px;
   padding: 20px;
@@ -11,16 +12,64 @@
   min-width: 218px;
   margin-top: 193px;
   margin-bottom: 160px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 102px - 34px;
+    margin-bottom: 173px - 34px;
+  }
 }
-.ellipse {
+.hero__big-eco {
+  position: absolute;
+  left: 34px;
+  bottom: 28px;
+}
+.hero__ellipse {
   position: absolute;
   top: 83px;
   right: 0;
+
+  @media screen and (min-width: 768px) {
+    top: 31px;
+    right: 137px;
+  }
 }
-.ice-cream {
+.hero__ice-cream {
   position: absolute;
   bottom: 0;
   right: 32px;
+
+  @media screen and (min-width: 768px) {
+    right: 247px;
+  }
+}
+.hero__cafes {
+  position: absolute;
+  right: 34px;
+  top: 94px;
+}
+.hero__food-trucks {
+  position: absolute;
+  right: 34px;
+  top: 151px;
+}
+.hero__so-tasty {
+  position: absolute;
+  right: 34px;
+  bottom: 0;
+}
+@media screen and(max-width:767px) {
+  .hero__big-eco {
+    display: none;
+  }
+  .hero__cafes {
+    display: none;
+  }
+  .hero__food-trucks {
+    display: none;
+  }
+  .hero__so-tasty {
+    display: none;
+  }
 }
 .hero__title {
   position: relative;
