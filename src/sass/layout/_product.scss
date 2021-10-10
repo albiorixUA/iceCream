@@ -38,6 +38,9 @@
   @media screen and (min-width: 768px) {
     @include font(400, 26px, 30px);
   }
+  @media screen and (min-width: 1280px) {
+    @include font(400, 30px, 34px);
+  }
 }
 
 .products__titel {
@@ -51,12 +54,20 @@
   @media screen and (min-width: 768px) {
     @include font(400, 48px, 55px);
   }
+  @media screen and (min-width: 1280px) {
+    @include font(400, 58px, 66px);
+  }
 }
 
 @media screen and (min-width: 768px) {
   .products__list {
     display: flex;
     margin-top: 150px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .products__list {
+    margin-top: 259px;
   }
 }
 
@@ -80,6 +91,7 @@
     height: 525px;
     padding-left: 11px;
     padding-right: 11px;
+    padding-bottom: 50px;
   }
 }
 
@@ -266,6 +278,9 @@
   background-repeat: no-repeat;
   margin: 0 auto;
   margin-bottom: 30px;
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 32px;
+  }
 }
 
 .products__discription--tab {
@@ -284,7 +299,6 @@
   @media screen and (min-width: 1280px) {
     @include font(400, 16px, 28px);
     width: 241px;
-    height: 106px;
   }
 }
 
@@ -317,6 +331,9 @@
   @media screen and (min-width: 768px) {
     margin-top: 40px;
   }
+  @media screen and (min-width: 1280px) {
+    margin-top: 62px;
+  }
 }
 
 .products__button:hover {
@@ -326,4 +343,34 @@
 
 .products__button:active {
   box-shadow: 0px 5px 10px 2px rgba(18, 118, 195, 0.2) inset;
+}
+
+.products__item--overlay {
+  position: absolute;
+  border-radius: 24px;
+  top: 0px;
+  left: 0;
+  padding-top: 180px;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+  text-align: start;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  padding: 24px 24px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.products__item--overlay.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
