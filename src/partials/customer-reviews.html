@@ -1,1 +1,49 @@
 <!----------------- Customer Reviews -------------------->
+<section class="reviews">
+    <div class="container">
+        <picture>
+            <source srcset="./images/reviews/mob-1.jpg 1x, ./images/reviews/mob-2@2x.jpg 2x" type="image/jpg"
+                media="(max-width:767px)" >
+            <source srcset="./images/reviews/tab-1.jpg 1x, ./images/reviews/tab-2@2x.jpg 2x" type="image/jpg"
+                media="(min-width:768px)" >
+            <source srcset="./images/reviews/desk-1.jpg 1x, ./images/reviews/desk-2@2x.jpg 2x" type="image/jpg"
+                media="(min-width:1200px)">
+            <img class="reviews-photo" src="./images/reviews/mob-1.jpg" alt="Emily">
+        </picture>
+
+        <div class="reviews-description">
+            <svg class="reviews-quotes">
+                <use href="./images/reviews/reviews.svg#icon-double-quotes-bg"></use>
+            </svg>
+            <div class="reviews-wrapper">
+                <p class="reviews-text">
+                    Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem.
+                    In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+                </p>
+                <div class="reviews-stripes"></div>
+            </div>
+        </div>
+
+        <div class="reviews-dots">
+            <span class="reviews-dots-icon"></span>
+            <span class="reviews-dots-icon"></span>
+            <span class="reviews-dots-icon"></span>
+        </div>
+        <p class="reviews-text-name">Emily, Los Angeles</p>
+    </div>
+    <ul class="reviews-icons">
+        <li class="reviews-icons-label">
+            <a class="reviews-icon-list" href="">
+                <svg class="reviews-icon-list-svg">
+                    <use href="./images/reviews/reviews.svg#icon-house"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="reviews-icons-label">
+            <a class="reviews-icon-list-background" href=""></a>
+        </li>
+        <li class="reviews-icons-label">
+            <a class="reviews-icon-list-background" href=""></a>
+        </li>
+    </ul>
+</section>
