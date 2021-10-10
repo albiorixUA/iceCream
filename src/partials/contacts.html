@@ -2,18 +2,34 @@
 <section class="contacts">
   <div class="container">
     <h2>Our Contacts</h2>
-    <!-- <div class="modal-overlay">
+    <div class="modal-overlay">
             <div class="modal-maps">
-                <ul class="content">
-                    <li></li>
+              <button id="contactsCloseBtn" class="contacts__close-btn">Close</button>
+              <p class="modal-maps__title">You can find us here.</p>
+                <ul class="modal-maps__content">
+                    <li class="modal-maps__content-item active" 
+                    style="background-color: blue;"
+                    data-contactsmodalcontent="1">
+                      <!-- <img class="content__image"src="../images/contacts/Chicago-min.jpg"> -->
+                    </li>
+                    <li class="modal-maps__content-item" 
+                    style="background-color: rgb(219, 233, 25);"
+                    data-contactsmodalcontent="2">
+                      <!-- <img class="content__image"src="../images/contacts/New York-min.jpg"> -->
+                    </li>
+                    <li class="modal-maps__content-item" 
+                    style="background-color: rgb(28, 223, 54);"
+                    data-contactsmodalcontent="3">
+                      <!-- <img class="content__image"src="../images/contacts/Los Angeles-min.jpg"> -->
+                    </li>
                 </ul>
-                <div class="tabs">
-                    <button class="contacts__modal-btn contacts__btn">Chicago</button>
-                    <button class="contacts__modal-btn contacts__btn">Los Angeles</button>
-                    <button class="contacts__modal-btn contacts__btn">New York</button>
+                <div id="contactsModalBbtnWrapper" class="contacts__tabs-wrapper">
+                    <button class="contacts__modal-btn contacts__btn active" data-contactsmodalbtn="1">Chicago</button>
+                    <button class="contacts__modal-btn contacts__btn" data-contactsmodalbtn="2">Los Angeles</button>
+                    <button class="contacts__modal-btn contacts__btn" data-contactsmodalbtn="3">New York</button>
                 </div>
             </div>
-        </div> -->
+        </div>
     <ul class="contacts-list">
       <li class="contact-card">
         <span class="contact-card__mark">cafe</span>
@@ -99,7 +115,7 @@
     </ul>
     <ul class="contacts__btn-wrapper">
       <li>
-        <button class="contacts__btn" type="button">
+        <button id="location-btn"class="contacts__btn" type="button">
           Our Locations
           <svg class="contacts__btn-icon" width="9" height="12">
             <use href="../src/images/sprite.svg#icon-arrow-right"></use>
