@@ -1,8 +1,11 @@
-.container-about {
+.about {
+  background-color: $sections-background-color;
+  padding-bottom: 0;
+  padding-top: 0;
   background-color: $sections-background-color;
   background-repeat: no-repeat;
   background-size: contain;
-  padding-top: 125px;
+
   @media screen and (max-width: 767px) {
     background-image: url('/images/about/about-bg-mob1x.png');
     background-position: right 0px bottom 62px;
@@ -23,6 +26,9 @@
       background-image: url('/images/about/about-bg-desk@2x.png');
     }
   }
+}
+.container-about {
+  padding-top: 125px;
 }
 .about__pre-text {
   font-family: Titan One;
