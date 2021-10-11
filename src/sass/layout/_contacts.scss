@@ -380,12 +380,26 @@
     left: auto;
     right: 0;
 }
-
+#firstslide {
+  background-image: url('https://images.unsplash.com/photo-1564801629778-eabf6ed7d440?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80');
+  background-position: top;
+}
+#secondslide {
+  background-image: url('https://images.unsplash.com/photo-1525451167239-264fb77ad20f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80');
+}
+#thirdslide {
+  background-image: url('https://images.unsplash.com/photo-1620124452520-0d9be56b29ee?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1473&q=80');
+  background-position: left 0px bottom 0px;
+}
 .slide {
     width: 100%;
     height: 100%;
     display: none;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+
 
 .slide.active {
     display: block;
