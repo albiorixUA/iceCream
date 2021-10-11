@@ -128,10 +128,12 @@
 
   @media screen and (min-width: 768px) {
     @include font(400, 22px, 25px, 0.04em);
+    margin-bottom: 20px;
   }
 
   @media screen and (min-width: 1280px) {
     @include font(400, 38px, 44px, 0.04em);
+    margin-bottom: 25px;
   }
 }
 .hero__title--mod {
@@ -146,24 +148,27 @@
     @include font(400, 58px, 52px, 0.04em);
   }
 }
-.hero-btn__wrapper {
+.hero-btn__list {
   display: flex;
 }
-.hero-btn {
-  color: $main-color;
+.hero-btn__item {
   border: none;
   border-radius: 20px;
   background-color: $button-color;
   cursor: pointer;
 
   padding: 7px 15px;
-  font-family: DM Sans, sans-serif;
-  @include font(400, 8px, 10px, 0.04em);
+
   display: flex;
   align-items: center;
   text-align: center;
+
   &:not(:last-child) {
     margin-right: 8px;
+
+    @media screen and (min-width: 1280px) {
+      margin-right: 15px;
+    }
   }
   &:hover,
   &:focus {
@@ -172,7 +177,20 @@
 
   @media screen and (min-width: 1280px) {
     @include font(400, 14px, 18px, 0.04em);
+    padding: 11px 20px;
   }
+}
+.hero-btn__link {
+  color: $main-color;
+  font-family: DM Sans, sans-serif;
+  @include font(400, 8px, 10px, 0.04em);
+
+  @media screen and (min-width: 1280px) {
+    @include font(400, 14px, 18px, 0.04em);
+  }
+}
+.hero-btn__link--mod {
+  color: $button-color;
 }
 .hero-btn__alt {
   color: $accent-first-color;
@@ -193,7 +211,7 @@
 
   @media screen and (min-width: 1280px) {
     width: 200px;
-    margin-left: 180px;
+    margin-left: 218px;
     padding-bottom: 56px;
   }
 }
