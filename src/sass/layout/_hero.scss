@@ -1,14 +1,15 @@
-.hero {
-  background-color: $first-background-color;
+.header-hero {
+  position: relative;
 }
 .hero__container {
-  // outline: 1px solid black;
   position: relative;
   min-width: 320px;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media screen and (min-width: 768px) {
-    padding: 34px;
+    padding-left: 34px;
+    padding-right: 34px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -18,24 +19,30 @@
 }
 .hero-title__wrapper {
   position: relative;
+  z-index: 1;
   min-width: 218px;
-  margin-top: 193px;
-  margin-bottom: 160px;
+  padding-top: 137px;
+  padding-bottom: 160px;
 
   @media screen and (min-width: 768px) {
-    margin-top: 102px;
-    margin-bottom: 66px;
+    padding-top: 15px;
+    padding-bottom: 66px;
   }
 
   @media screen and (min-width: 1280px) {
-    margin-top: 171px;
-    margin-bottom: 112px;
+    padding-top: 84px;
+    padding-bottom: 112px;
   }
 }
 .hero__big-eco {
   position: absolute;
 
   bottom: 28px;
+
+  @media screen and (min-width: 1280px) {
+    bottom: 45px;
+    left: 77px;
+  }
 }
 .hero__ellipse {
   position: absolute;
@@ -72,6 +79,7 @@
 
   @media screen and (min-width: 1280px) {
     right: 97px;
+    top: 156px;
   }
 }
 .hero__food-trucks {
@@ -81,6 +89,7 @@
 
   @media screen and (min-width: 1280px) {
     right: 97px;
+    top: 248px;
   }
 }
 .hero__so-tasty {
@@ -176,12 +185,13 @@
 }
 .hero-text__wrapper {
   width: 114px;
-  margin-bottom: 4px;
+  padding-bottom: 34px;
   margin-left: 120px;
 
   @media screen and (min-width: 1280px) {
     width: 200px;
-    margin-left: 218px;
+    margin-left: 180px;
+    padding-bottom: 56px;
   }
 }
 .hero-text {
