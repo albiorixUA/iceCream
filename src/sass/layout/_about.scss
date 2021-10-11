@@ -1,7 +1,7 @@
 .about {
   background-color: $sections-background-color;
   padding-bottom: 0;
-  padding-top: 0;
+  padding-top: 125px;
   background-color: $sections-background-color;
   background-repeat: no-repeat;
   background-size: contain;
@@ -27,15 +27,17 @@
       background-image: url('/images/about/about-bg-desk@2x.png');
     }
   }
-}
-.container-about {
-  padding-top: 125px;
   @media screen and (min-width: 768px) {
     padding-top: 130px;
+    padding-bottom: 0;
   }
   @media screen and (min-width: 1280px) {
     padding-top: 125px;
+    padding-bottom: 0;
   }
+}
+.container-about {
+  // padding-top: 125px;
 }
 .about__pre-text {
   font-family: Titan One;
