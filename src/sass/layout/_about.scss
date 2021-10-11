@@ -29,7 +29,7 @@
 }
 .container-about {
   padding-top: 125px;
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     padding-top: 130px;
   }
   @media screen and (min-width: 1280px) {
@@ -51,11 +51,9 @@
     font-weight: normal;
     font-size: 26px;
     line-height: 30px;
-    margin-top: 5px;
     margin-bottom: 16px;
   }
   @media screen and (min-width: 1280px) {
-    margin-top: 0px;
     font-weight: normal;
     font-size: 30px;
     line-height: 34px;
@@ -94,16 +92,13 @@
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
     align-content: center;
-    padding-left: 5px;
-    padding-right: 2px;
+    justify-content: center;
   }
-  @media screen and (min-width: 1280px) {
-    margin-left: -3px;
-    padding-left: 0;
-    padding-right: 0;
-  }
+  // @media screen and (min-width: 1280px) {
+  //   padding-left: 0;
+  //   padding-right: 0;
+  // }
 }
 .about__image {
   width: 100%;
@@ -126,7 +121,7 @@
     background-image: url('/images/about/about-mob@2x-560.png');
   }
   @media screen and (min-width: 768px) {
-    width: 340px;
+    min-width: 340px;
     min-height: 340px;
     margin-bottom: 0;
 
@@ -139,7 +134,7 @@
     }
   }
   @media screen and (min-width: 1280px) {
-    width: 516px;
+    min-width: 516px;
     min-height: 516px;
     background-image: url('/images/about/about-desk1x-516.png');
 
@@ -166,12 +161,11 @@
     // margin-top: 36px;
   }
   @media screen and (min-width: 768px) {
-    width: 50%;
     padding-top: 50px;
-    padding-left: 17px;
+    margin-left: 20px;
   }
   @media screen and (min-width: 1280px) {
-    padding-left: 74px;
+    margin-left: 71px;
   }
 }
 .about__onetext {
@@ -263,10 +257,9 @@
   }
 }
 .about__icon {
-  width: 4.43px;
-  height: 8px;
-  margin-left: 13.62px;
-  fill: #c4c4c4;
-  //   background-color: $accent-first-color;
-  // border: 2px solid #d41443;
+  display: flex;
+  justify-content: center;
+  width: 8px;
+  height: 10px;
+  margin-left: 14px;
 }
