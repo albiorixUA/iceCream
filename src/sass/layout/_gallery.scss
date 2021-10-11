@@ -1,3 +1,6 @@
 .hidden-title {
   @include hidden();
 }
+.gallery {
+  background: linear-gradient(to bottom, #fff5f6 40%, #fff5f6 5%, #ffffff 5%, #ffffff 50%);
+}
