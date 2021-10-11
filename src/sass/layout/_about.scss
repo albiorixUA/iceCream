@@ -2,7 +2,6 @@
   background-color: $sections-background-color;
   padding-bottom: 0;
   padding-top: 0;
-  background-color: $sections-background-color;
   background-repeat: no-repeat;
   background-size: contain;
 
@@ -273,18 +272,10 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 2;
-
+  z-index: 20;
   background: rgba(0, 0, 0, 0.2);
-  /* ---можно спозиционировать  модальное окно флексом */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   opacity: 1;
-  // transition: opacity var(--transition-duration) var(--transition-timing-function);
+  transition: opacity var(--transition-duration) var(--transition-timing-function);
   &.is-hidden {
     opacity: 0;
     pointer-events: none;
@@ -293,70 +284,57 @@
     }
   }
 }
-/*  ----- бекдроп и модальное окно в скрытом состоянии, стили для скрытого окна*/
-// .backdrop.is-hidden .modal {
-//   transform: translate(-50%, -50%) scale(0.1);
-// }
-/*----- само модальное окно--- */
-.about-modal {
-  z-index: 20;
-  width: 100%;
-  background-color: $first-background-color;
-  @media screen and (min-width: 768px) {
-    position: absolute;
-    // top: 50%;
-    // left: 50%;
-    width: 450px;
-    min-height: 581px;
-  }
-  padding: 40px;
 
+// /*----- само модальное окно--- */
+.about-modal {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  z-index: 21;
+
+  background-color: $sections-background-color;
+  background-image: url('/images/about/about-bg-mob1x.png');
+  background-position: left 0 top 0px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 40px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: scale(1);
-  // transition: transform 750ms var(--transition-timing-function),
-  //   opacity 500ms var(--transition-timing-function);
+  transition: transform 750ms var(--transition-timing-function) opacity 500ms
+    var(--transition-timing-function);
   opacity: 1;
-  @media screen and (min-width: 1280px) {
-    width: 528px;
-    min-height: 581px;
-  }
 }
 
-/* ----КНОПКА ЗАКРЫТЬ---- */
+// /* ----КНОПКА ЗАКРЫТЬ---- */
 .about-modal__button-close {
   position: absolute;
   top: 8px;
   right: 8px;
   width: 30px;
   height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
-  // background-color: $button-hover-second-color;
-  // fill: $accent-first-color;
-  // transition: fill var(--transition-duration) var(--transition-timing-function);
+  background-color: $button-hover-second-color;
+  fill: $accent-first-color;
   cursor: pointer;
-  // &:hover,
-  // &:focus,
-  // & .about-modal__button-icon:hover,
-  // & .about-modal__button-icon:focus {
-  //   background-color: $accent-first-color;
-  //   border-color: $accent-first-color;
-  // }
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $accent-first-color;
 }
-
-// .about-modal__button-icon {
-//   fill: #000000;
-//   transition: fill var(--transition-duration) var(--transition-timing-function);
-// }
-
 .about-modal__header {
-  display: block;
+  //   display: block;
   font-family: Titan One;
   font-style: normal;
   font-weight: normal;
@@ -366,7 +344,50 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
-  // @media screen and (min-width: 1280px) {
+}
+.about-modal__wrap {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.about__article {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 162%;
 
-  // }
+  /* or 19px */
+  color: $primary-text-color;
+  @media screen and (min-width: 768px) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 176%;
+    /* or 25px */
+  }
+  @media screen and (min-width: 1280px) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 176%;
+    /* or 28px */
+    letter-spacing: 0.04em;
+  }
+}
+.about__img {
+  //   display: flex;
+  width: 340px;
+  height: auto;
+}
+.about__audio {
+  display: flex;
+  width: 200px;
+  height: 30px;
+  @media screen and (min-width: 768px) {
+    width: 300px;
+    height: 54px;
+  }
 }
