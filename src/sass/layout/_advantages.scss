@@ -45,17 +45,34 @@
 }
 
 .advantages__counter {
-  color: $accent-first-color;
+  // color: $accent-first-color;
   font-family: Titan One, sans-serif;
   @include font(400, 36px, 55px);
-  margin-top: 40px;
+  margin-top: 16px;
   text-transform: uppercase;
+  animation: anime infinite 5s linear;
+  @keyframes anime {
+    0% {
+      color: $accent-first-color;
+    }
+    33% {
+      color: $accent-second-color;
+    }
+    66% {
+      color: $menu-background-color;
+    }
+    100% {
+      color: $menu-border-color;
+    }
+  }
 
   @media screen and (min-width: 768px) {
+    margin-top: 36px;
     font-size: 48px;
     text-transform: none;
   }
   @media screen and (min-width: 1280px) {
+    margin-top: 40px;
     font-size: 58px;
     text-transform: none;
   }
