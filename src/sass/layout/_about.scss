@@ -117,7 +117,7 @@
   background-image: url('/images/about/about-mob1x-280.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
