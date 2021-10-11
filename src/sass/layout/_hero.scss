@@ -36,8 +36,11 @@
   }
 }
 .hero__big-eco {
-  position: absolute;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
+  position: absolute;
   bottom: 28px;
 
   @media screen and (min-width: 1280px) {
@@ -74,6 +77,10 @@
   }
 }
 .hero__cafes {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
   position: absolute;
   right: 34px;
   top: 94px;
@@ -84,6 +91,10 @@
   }
 }
 .hero__food-trucks {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
   position: absolute;
   right: 34px;
   top: 151px;
@@ -94,29 +105,16 @@
   }
 }
 .hero__so-tasty {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
   position: absolute;
   right: 34px;
   bottom: 0;
 
   @media screen and (min-width: 1280px) {
     right: 109px;
-  }
-}
-@media screen and(max-width:767px) {
-  .hero__big-eco {
-    display: none;
-  }
-  .hero__cafes {
-    display: none;
-  }
-  .hero__food-trucks {
-    display: none;
-  }
-  .hero__so-tasty {
-    display: none;
-  }
-  .hero-text__wrapper {
-    display: none;
   }
 }
 .hero__title {
@@ -185,6 +183,10 @@
   }
 }
 .hero-text__wrapper {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
   width: 114px;
   padding-bottom: 34px;
   margin-left: 120px;
