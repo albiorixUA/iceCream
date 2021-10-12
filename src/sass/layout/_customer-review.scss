@@ -43,6 +43,8 @@
 .reviews-wrapper {
   position: relative;
   background-color: transparent;
+  background: repeating-linear-gradient(#fafafa, #fafafa 30px, #e1e1e1 30px, #e1e1e1 31px);
+  padding: 0 0 6px;
 }
 
 .reviews-text {
@@ -52,16 +54,6 @@
   text-decoration-color: $line-color;
   letter-spacing: 0;
   border-bottom: unset;
-}
-
-.reviews-stripes {
-  position: absolute;
-  top: 28.5px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(to bottom, #e1e1e1, #e1e1e1 1px, #fafafa 1px, #fafafa);
-  background-size: 100% 30px;
 }
 
 .reviews-quotes {
@@ -186,7 +178,6 @@
   .reviews-text {
     font-size: 16px;
     line-height: 1.86;
-    border-bottom: 1px solid $line-color;
   }
 
   .reviews-dots {
