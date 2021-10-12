@@ -18,7 +18,7 @@
           height="12"
           class="menu-button__icon--menu"
           src="./images/header/Burger.svg"
-          aria-label="Переключатель мобильного меню"
+          alt="Переключатель мобильного меню"
         />
         <!-- <svg width="20" height="12" aria-label="Переключатель мобильного меню">
                   <use class="menu-button__icon--menu" href="./img/header-sprite.svg#icon-Burger"></use>
@@ -58,7 +58,7 @@
         <img
           class="menu-button__icon--close"
           src="./images/header/close.svg"
-          aria-label="Переключатель мобильного меню"
+          alt="Переключатель мобильного меню"
         />
       </button>
 
@@ -248,34 +248,38 @@
   </div>
 </header>
 
-
 <div class="backdrop is-hidden-header" data-modal-header>
-  <div class="modal"> 
+  <div class="modal">
     <button class="modal__btn" type="button" data-modal-header-close>
-      <img src="./images/header/close.svg" alt="" width="24" height="24">
+      <img src="./images/header/close.svg" alt="" width="24" height="24" />
     </button>
 
     <h2 class="modal-title">fill out the form and we will call you</h2>
 
     <div class="modal-form__field">
       <label class="modal-form__label" for="username">Name</label>
-          <input class="modal-form__input" type="text" name="username" id="username">
-  </div>
+      <input class="modal-form__input" type="text" name="username" id="username" />
+    </div>
 
-  <div class="modal-form__field">
+    <div class="modal-form__field">
       <label class="modal-form__label" for="tel">Telephone</label>
-          <input class="modal-form__input" type="text" name="username" id="tel">
-  </div>
+      <input class="modal-form__input" type="text" name="username" id="tel" />
+    </div>
 
-  <div class="modal-form__field">
+    <div class="modal-form__field">
       <label class="modal-form__label" for="mail">Mail</label>
-          <input class="modal-form__input" type="text" name="username" id="mail">
-  </div>
+      <input class="modal-form__input" type="text" name="username" id="mail" />
+    </div>
 
-  <label class="modal-form__label" for="coments">Comment</label>
-  <textarea class="modal-form__textarea" name="coments" id="coments" rows="10"
-      placeholder="Enter text"></textarea>
+    <label class="modal-form__label" for="coments">Comment</label>
+    <textarea
+      class="modal-form__textarea"
+      name="coments"
+      id="coments"
+      rows="10"
+      placeholder="Enter text"
+    ></textarea>
 
-  <button class="modal-form-btn">send</button>
+    <button class="modal-form-btn">send</button>
   </div>
 </div>
