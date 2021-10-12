@@ -24,8 +24,10 @@
 
 .advantages__item {
   max-width: 230px;
+  margin-bottom: 38px;
   @media screen and (min-width: 768px) {
     margin-left: 30px;
+
     max-width: 100%;
   }
   @media screen and (min-width: 1280px) {
