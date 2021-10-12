@@ -28,9 +28,6 @@
     margin-left: 60px;
     max-width: 100%;
   }
-  &:not(:last-child) {
-    margin-bottom: 38px;
-  }
 }
 @each $icon in milk, apple, candy {
   .#{$icon}-icon::before {
@@ -45,7 +42,6 @@
 }
 
 .advantages__counter {
-  // color: $accent-first-color;
   font-family: Titan One, sans-serif;
   @include font(400, 36px, 55px);
   margin-top: 16px;
