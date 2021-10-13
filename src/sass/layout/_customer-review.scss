@@ -4,6 +4,10 @@
   align-items: center;
 }
 
+.customer-rewiews__title {
+  @include hidden;
+}
+
 .customer-reviews__wrapper {
   display: flex;
   flex-direction: column;
