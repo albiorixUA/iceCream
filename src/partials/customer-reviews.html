@@ -1,49 +1,47 @@
 <!----------------- Customer Reviews -------------------->
-<section class="reviews">
-    <div class="container">
-        <picture>
-            <source srcset="./images/reviews/mob-1.jpg 1x, ./images/reviews/mob-2@2x.jpg 2x" type="image/jpg"
-                media="(max-width:767px)" >
-            <source srcset="./images/reviews/tab-1.jpg 1x, ./images/reviews/tab-2@2x.jpg 2x" type="image/jpg"
-                media="(min-width:768px)" >
-            <source srcset="./images/reviews/desk-1.jpg 1x, ./images/reviews/desk-2@2x.jpg 2x" type="image/jpg"
-                media="(min-width:1200px)">
-            <img class="reviews-photo" src="./images/reviews/mob-1.jpg" alt="Emily">
-        </picture>
-
-        <div class="reviews-description">
-            <svg class="reviews-quotes">
-                <use href="./images/reviews/reviews.svg#icon-double-quotes-bg"></use>
-            </svg>
-            <div class="reviews-wrapper">
-                <p class="reviews-text">
-                    Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem.
-                    In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
-                </p>
-                <div class="reviews-stripes"></div>
+<section class="customer-reviews section">
+<div class="customer-reviews__container container">
+    <ul class="reviews__slides list" id="reviews__slides">
+        <li class="reviews__slide showing">
+            <div class="customer-reviews__wrapper">
+                <img class="customer-reviews__img" srcset="./images/reviews/costumer1-1x.png 1x,./images/reviews/costumer1-2x.png 2x "src="./images/reviews/costumer1-1x.png" 
+                alt="personal photo Emily" width="85" height="85">
+                <div class="customer-reviews__content">
+                    <div class="customer-reviews__slide">
+                        Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+                        hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+                    </div>
+                </div>
+                <p class="customer-reviews__name">Emily, Los Angeles</p>
             </div>
-        </div>
-
-        <div class="reviews-dots">
-            <span class="reviews-dots-icon"></span>
-            <span class="reviews-dots-icon"></span>
-            <span class="reviews-dots-icon"></span>
-        </div>
-        <p class="reviews-text-name">Emily, Los Angeles</p>
-    </div>
-    <ul class="reviews-icons">
-        <li class="reviews-icons-label">
-            <a class="reviews-icon-list" href="">
-                <svg class="reviews-icon-list-svg">
-                    <use href="./images/reviews/reviews.svg#icon-house"></use>
-                </svg>
-            </a>
         </li>
-        <li class="reviews-icons-label">
-            <a class="reviews-icon-list-background" href=""></a>
+        <li class="reviews__slide">
+            <div class="customer-reviews__wrapper">
+                <img class="customer-reviews__img" srcset="./images/reviews/costumer2-1x.png 1x,./images/reviews/costumer2-2x.png 2x "src="./images/reviews/costumer2-1x.png"
+                 alt="personal photo Bella" width="85" height="85">
+                <div class="customer-reviews__content">
+                    <div class="customer-reviews__slide">
+                        In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+                        Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem.
+                    </div>
+                </div>
+                <p class="customer-reviews__name">Bella, Wellington</p>
+            </div>
         </li>
-        <li class="reviews-icons-label">
-            <a class="reviews-icon-list-background" href=""></a>
+        <li class="reviews__slide">
+            <div class="customer-reviews__wrapper">
+                <img class="customer-reviews__img" srcset="./images/reviews/costumer3-1x.png 1x,./images/reviews/costumer3-2x.png 2x"src="./images/reviews/costumer3-1x.png" 
+                alt="personal photo Cathy" width="85" height="85">
+                <div class="customer-reviews__content">
+                    <div class="customer-reviews__slide">
+                        Quisque cursus et, porttitor risus. Nullam viverra consectetuer. Aliquam sem. In
+                        hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+                    </div>
+                </div>
+                <p class="customer-reviews__name">Cathy, New York</p>
+            </div>
         </li>
     </ul>
+    <div id="reviews__buttons"></div>
+</div>
 </section>

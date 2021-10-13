@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IceCream</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -21,20 +22,25 @@
     <include src="./partials/header.html"></include>
     <include src="./partials/hero.html"></include>
     <include src="./partials/howitsmade-modal.html"></include>
-    <include src="./partials/products.html"></include>
-    <include src="./partials/about.html"></include>
-    <include src="./partials/advantages.html"></include>
-    <include src="./partials/gallery.html"></include>
-    <include src="./partials/customer-reviews.html"></include>
-    <include src="./partials/contacts.html"></include>
+    <main>
+      <include src="./partials/products.html"></include>
+      <include src="./partials/about.html"></include>
+      <include src="./partials/advantages.html"></include>
+      <include src="./partials/gallery.html"></include>
+      <include src="./partials/customer-reviews.html"></include>
+      <include src="./partials/contacts.html"></include>
+    </main>
     <include src="./partials/footer.html"></include>
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <!-- <script src="../src/js/menu.js"></script> -->
     <script src="./js/menu.js"></script>
     <script src="./js/howitsmade-modal.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/about-modal.js"></script>
     <script src="./index.js"></script>
     <script src="./js/contacts-modal-window.js"></script>
+    <script src="./js/header-modal.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>

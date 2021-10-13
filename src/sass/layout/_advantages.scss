@@ -1,5 +1,5 @@
 .advantages {
-  padding-top: 30px;
+  padding-top: 40px;
   padding-bottom: 97px;
   background-color: $sections-background-color;
   @media screen and (min-width: 768px) {
@@ -24,12 +24,14 @@
 
 .advantages__item {
   max-width: 230px;
+  margin-bottom: 38px;
   @media screen and (min-width: 768px) {
-    margin-left: 60px;
+    margin-left: 30px;
+
     max-width: 100%;
   }
-  &:not(:last-child) {
-    margin-bottom: 38px;
+  @media screen and (min-width: 1280px) {
+    margin-left: 60px;
   }
 }
 @each $icon in milk, apple, candy {
@@ -45,7 +47,6 @@
 }
 
 .advantages__counter {
-  // color: $accent-first-color;
   font-family: Titan One, sans-serif;
   @include font(400, 36px, 55px);
   margin-top: 16px;
