@@ -51,6 +51,22 @@
     left: 77px;
   }
 }
+.ellipse {
+  width: 346px;
+  height: 346px;
+  border-radius: 50%;
+  background-color: #ffa5ba;
+
+  @media screen and(min-width: 768px) {
+    width: 324px;
+    height: 324px;
+  }
+
+  @media screen and(min-width: 1280px) {
+    width: 538px;
+    height: 538px;
+  }
+}
 .hero__ellipse {
   position: absolute;
   top: 83px;
